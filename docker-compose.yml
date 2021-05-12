@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+        web:
+                restart: always
+                build: .
+                command: /code/docker-entrypoint.sh 
+                volumes:
+                        - .:/code
+                ports:
+                        - "1337:8000"
