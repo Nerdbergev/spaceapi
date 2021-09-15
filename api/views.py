@@ -57,6 +57,7 @@ class SpaceAPI(viewsets.ViewSet):
                     sensorsData.update({sensorCat: sensorData})
         content = {
             "api": "0.13",
+            "api_compatibility": ["14"],
             "space": "Nerdberg",
             "logo": "https://wiki.nerdberg.de/resources/assets/logo.png",
             "url": "https://www.nerdberg.de",
