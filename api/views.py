@@ -56,7 +56,6 @@ class SpaceAPI(viewsets.ViewSet):
                 else:
                     sensorsData.update({sensorCat: sensorData})
         content = {
-            "api": "0.13",
             "api_compatibility": ["14"],
             "space": "Nerdberg",
             "logo": "https://wiki.nerdberg.de/resources/assets/logo.png",
@@ -80,9 +79,6 @@ class SpaceAPI(viewsets.ViewSet):
                     "url": "https://kalender.nerdberg.de/events.ics"
                 }
             },
-            "issue_report_channels": [
-                "twitter"
-            ],
             "ext_ccc": "chaostreff",
             "state": {
                 "open": doorStatus.status=="open",
@@ -91,7 +87,22 @@ class SpaceAPI(viewsets.ViewSet):
                     "open": "https://wiki.nerdberg.de/images/f/f2/Nerdbergopen.png",
                     "closed": "https://wiki.nerdberg.de/images/a/a7/Nerdbergclose.png",
                 }
-
-            }
+            },
+            "membership_plans": [
+                {
+                    "name": "Vollmitgliedschaft",
+                    "value": 35,
+                    "currency": "EUR",
+                    "billing_interval": "monthly",
+                    "description": "Normal fee, if it is to much for you, contact the leading board, we'll find a solution."
+                },
+                {
+                    "name": "Fördermitgliedschaft",
+                    "value": 15,
+                    "currency": "EUR",
+                    "billing_interval": "monthly"
+                },                
+            
+            ],
         }
         return Response(content)
