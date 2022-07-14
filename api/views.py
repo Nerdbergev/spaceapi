@@ -69,6 +69,7 @@ class SpaceAPI(viewsets.ViewSet):
             },
             "contact": {
                 "twitter": "@nerdbergev",
+                "mastodon": "@Nerdberg@chaos.social",
                 "irc": "irc://irc.hackint.org/nerdberg",
                 "ml": "freunde@lists.nerdberg.de",
                 "email": "vorstand@lists.nerdberg.de",
