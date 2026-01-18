@@ -63,9 +63,9 @@ class SpaceAPI(viewsets.ViewSet):
             "url": "https://www.nerdberg.de",
             "sensors": sensorsData,
             "location": {
-                "address": "Jakobinenstraße 26, 90762 Fuerth, Germany",
-                "lat": 49.47048,
-                "lon": 11.0033
+                "address": "Solgerstr. 4, 90429 Nueremberg, Germany",
+                "lat": 49.4539461681425,
+                "lon": 11.062196797395268
             },
             "contact": {
                 "twitter": "@nerdbergev",
